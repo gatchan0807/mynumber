@@ -1,0 +1,9 @@
+<div class='login_form'>
+  <%= form_for @user, url: top_index_path do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'name_form' %><br>
+    <%= f.label :number %>
+    <%= f.text_field :number, maxlength: 4, class: 'name_form' %><br>
+    <%= f.submit '作成', class: 'submit_form' %>
+  <% end %>
+</div>

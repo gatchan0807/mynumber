@@ -1,0 +1,29 @@
+<div id="opening_proc" class="game">
+  <div id="leakage_inp_com">
+     データを書き込んでください
+  </div>
+  <div id="opening_left_lea">
+    <div id="leakage_inp_mes">５００：<span class="green">名無し：</span>2016/02/17(水) 16:03:49.31 ID:3r0e8GbC</div>
+    <form id="user_info_inp" onsubmit="judge_lea(); return false;">
+      <label for="user_name">名前：</label>
+      <input type="text" name="user_name" id="u_name" autocomplete="off" autofocus="">
+      <label for="user_number">マイナンバー：</label>
+      <input type="text" name="user_number" id="u_number" autocomplete="off" maxlength="4">
+      <label for="user_address">住所：</label>
+      <input type="text" name="user_address" id="user_address" autocomplete="off">
+      <label for="user_tel">電話番号：</label>
+      <input type="text" name="user_tel" id="user_tel" autocomplete="off">
+      <input type="submit" name="submit" id="entry" value="投稿" onsubmit="judge_lea();">
+    </form>
+  </div>
+  <div id="opening_right_lea">
+    <h4 class="data_title">名前</h4>
+    <span id="hack_name3" class="hack_name">[ニックネーム]</span>
+    <h4 class="data_title">マイナンバー</h4>
+    <span id="mynumber2" class="mynumber">[マイナンバー]</span>
+    <h4 class="data_title">住所</h4>
+    <span class="address">大阪府大阪市天王寺区上本町六丁目八ー四</span>
+    <h4 class="data_title">電話番号</h4>
+    <span class="tel_num">080-0000-0000</span>
+  </div>
+</div>

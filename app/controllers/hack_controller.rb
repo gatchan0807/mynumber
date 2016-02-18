@@ -1,0 +1,3 @@
+class HackController < ApplicationController
+
+end

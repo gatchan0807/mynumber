@@ -1,0 +1,2 @@
+class LeakController < ApplicationController
+end

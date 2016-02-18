@@ -1,0 +1,965 @@
+@charset "UTF-8";
+
+/*全体*/
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 90%;
+  background-image: url("top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background-color: #fff;
+  font-size: 2em;
+  padding-top: 2%;
+  padding-bottom: 5px;
+}
+#head_title {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #55f;
+  margin-right: 1%;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+/*スタート画面*/
+label {
+  font-size: 130%;
+}
+#login {
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 30%;
+}
+#login_form {
+  text-align: center;
+  padding: 15% 0;
+  border-radius: 15px;
+  background-color: #fff;
+}
+#pls_login {
+  margin-top: 0;
+}
+#u_name, #u_number {
+  width: 50%;
+  font-size: 1.5em;
+}
+#submit {
+  margin-top: 1em;
+  padding: 0 10%;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #55f;
+  color: #fff;
+  font-size: 2em;
+}
+#submit:hover {
+  background-color: #99f;
+}
+/*選択画面*/
+
+/*末路画面*/
+
+/*ゲーム画面*/
+.game {
+  height: 90%;
+}
+header {
+  position: relative;
+  padding: 2px 0;
+  top: 0;
+  width: 100%;
+  text-align: right;
+}
+.sub_title {
+  font-size: 1em;
+  margin: 0;
+}
+.background {
+  margin: 5% auto;
+  margin-bottom: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 70%;
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 20px;
+}
+/*口座乗っ取り（原因画面）*/
+#process_li {
+  margin: 5% auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 70%;
+  background-color: rgba(255,255,255, 0.8);
+  border-radius: 20px;
+}
+.process_li {
+  padding-bottom: 0.3em;
+  text-align: center;
+  font-size: 230%;
+  font-family: sans-serif;
+  color: #068;
+  list-style: circle;
+}
+.dot_none {
+  padding-bottom: 0.3em;
+  text-align: center;
+  font-size: 230%;
+  font-family: sans-serif;
+  list-style: none;
+}
+.buttons {
+  margin: 0 auto;
+  text-align: center;
+}
+#end_game, #enter_game {
+  background-color: #590;
+  border: 3px #fff solid;
+  color: #fff;
+  font-size: 2em;
+  width: 40%;
+}
+/*口座乗っ取り（流出説明画面）*/
+.mynum_img {
+  background-image: url("login_img.jpg");
+  height: 200px;
+  width: 350px;
+  margin: 0 3%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+#mynum_oflw_com {
+  margin: auto 3%;
+  margin-bottom: 5%;
+  font-size: 170%;
+  color: #068;
+}
+#next_hij_1 {
+  background-color: #590;
+  width: 40%;
+  border: 3px #fff solid;
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  left: 30%;
+}
+
+/*口座乗っ取り（ＤＢ状況説明画面）*/
+.background_com, .bg_com {
+  color: #068;
+}
+.bg_com {
+  font-size: 160%;
+}
+.background_com p {
+  font-size: 180%;
+  margin: 0 3%;
+}
+.background_com ul {
+  margin: 2% 4%;
+}
+#next_hij_2 {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*口座乗っ取り（ＤＢアクセス説明画面）*/
+.access_com {
+  margin: auto 3%;
+  font-size: 200%;
+  color: #068;
+}
+#do_access {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #000 solid;
+  background-color: #f90;
+  color: #000;
+  font-size: 2em;
+  margin-bottom: 5%;
+}
+#access_imgs {
+  height: 200px;
+  width: 90%;
+  margin: 0 auto;
+}
+#access_imgs div {
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 15%;
+}
+#srv_img {
+  background-image: url("server.jpg");
+  width: 230px;
+  height: 230px;
+  border: 3px #555 solid;
+  border-radius: 10px;
+}
+#arr_img {
+  background-image: url("arrow_opa.png");
+  width: 268px;
+  height: 100px;
+  position: relative;
+  top: 30%;
+  left: 10px;
+}
+#atc_img {
+  background-image: url("pc.jpg");
+  width: 150px;
+  height: 150px;
+  border: 3px #555 solid;
+  border-radius: 10px;
+  position: relative;
+  top: 40%;
+}
+
+/*口座乗っ取り（不正アクセスアニメーション）*/
+h1.access_per {
+  font-size: 250%;
+  text-align: center;
+  color: #035;
+}
+div.access_per {
+  font-size: 2em;
+  text-align: center;
+  color: #035;
+}
+#access_per_num {
+  color: #f40;
+}
+
+/*口座乗っ取り（不正アクセスアニメーション完了）*/
+.hack_acc_comp h1 {
+  text-align: center;
+  font-size: 250%;
+}
+#excla_acc {
+  margin: 0 auto;
+  background-image: url("excla.png");
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+#next_hij_3 {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*口座乗っ取り（データ搾取説明画面）*/
+.data_hack_com {
+  margin: auto 3%;
+  font-size: 200%;
+  color: #068;
+}
+#do_data {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*口座乗っ取り（データ搾取アニメーション）*/
+h1.steal_per {
+  font-size: 250%;
+  text-align: center;
+  color: #035;
+}
+div.steal_per {
+  font-size: 2em;
+  text-align: center;
+  color: #035;
+}
+#steal_per_num {
+  color: #f40;
+}
+
+/*口座乗っ取り（データ搾取完了画面）*/
+.hack_stl_comp h1 {
+  text-align: center;
+  font-size: 250%;
+}
+.data_hack_com {
+  margin: 0 auto;
+  width: 70%;
+}
+#excla_dat {
+  margin: 0 auto;
+  background-image: url("excla.png");
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+#next_hij_4 {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*口座乗っ取り（口座開設説明画面）*/
+#acount_open_com {
+  margin: auto 3%;
+  font-size: 210%;
+  color: #068;
+}
+#next_hij_5 {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*口座乗っ取り（不正開設（登録）画面）*/
+#opening_com {
+  margin-top: 2%;
+  margin-left: 3%;
+  padding: 1% 0;
+  width: 94%;
+  font-size: 180%;
+  background-color: #09f;
+  color: #fff;
+}
+#opening_left {
+  margin-left: 3%;
+  width: 47%;
+  height: 80%;
+  float: left;
+  background-color: rgba(255,255,255,0.8);
+}
+#opening_right {
+  margin: 0;
+  margin-right: 3%;
+  width: 47%;
+  height: 80%;
+  float: right;
+  background-color: #000;
+  color: #fff;
+}
+#user_info_inp {
+  width: 90%;
+  margin: 0 auto;
+}
+#user_info_inp label {
+  font-size: 170%;
+  float: left;
+}
+#u_name, #u_number, #user_address, #user_tel {
+  display: block;
+  margin: 10% auto;
+  margin-right: 0;
+  width: 70%;
+  font-size: 200%;
+  background-color: #ccc;
+  border: none;
+  border-bottom: 4px solid #000;
+}
+#user_address {
+  font-size: 130%;
+}
+.data_title {
+  font-size: 170%;
+  margin: 6% 0;
+  margin-left: 1em;
+}
+#hack_name3, #mynumber2 {
+  font-size: 170%;
+  margin-left: 3em;
+}
+.address {
+  font-size: 170%;
+  margin-left: 3em;
+}
+#entry {
+  width: 40%;
+  position: relative;
+  left: 60%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-bottom: 3px #777 solid;
+  border-right: 4px #777 solid;
+  background-color: #f30;
+  color: #fff;
+  font-size: 2em;
+}
+#entry:hover {
+  background-color: #f50;
+}
+#entry:active {
+  border-bottom: 1px #777 solid;
+  border-right: 2px #777 solid;
+}
+
+/*口座乗っ取り（不正開設（完了）画面）*/
+.user_aco_info h3 {
+  margin-left: 3em;
+  font-size: 200%;
+}
+.user_aco_info span {
+  display: block;
+  margin-left: 6em;
+  font-size: 250%;
+  color: #068;
+}
+#next_hij_6 {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+
+/*カード作成画面*/
+#create_card_btn {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border-right: 3px solid #555;
+  border-bottom: 3px solid #555;
+  background-color: #090;
+  color: #fff;
+  font-size: 150%;
+  margin: 0 auto;
+}
+#create_card_btn:hover {
+  background-color: #0f0;
+}
+#create_card_btn:active {
+  border-bottom: 1px solid #555;
+  border-right: 1px solid #555;
+}
+#create_card_com {
+  margin-bottom: 2%;
+  font-size: 250%;
+  display: block;
+  text-align: center;
+}
+
+/*カード使用画面（ゲーム画面）*/
+#use_card_btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  font-size: 230%;
+  background-color: #055;
+  color: #fff;
+  border-right: 4px solid #ccc;
+  border-bottom: 4px solid #ccc;
+}
+#use_card_btn:hover {
+  background-color: #099;
+}
+#use_card_btn:active {
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+
+#counter {
+  font-size: 250%;
+  color: #068;
+  display: block;
+  float: right;
+  margin-right: 10%;
+  border-bottom: 3px solid #068;
+}
+#yen_counter {
+  color: #f50;
+}
+#finish {
+  width: 20%;
+  position: relative;
+  left: 70%;
+  margin-top: 5%;
+  border: 3px #fff solid;
+  background-color: #590;
+  color: #fff;
+  font-size: 2em;
+}
+.bills {
+  display: none;
+  background-image: url("bills.png");
+  height: 100px;
+  width: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*個人情報流出（流出説明画面）*/
+.leakage_com {
+  margin: auto 3%;
+  margin-bottom: 5%;
+  font-size: 200%;
+  color: #068;
+}
+.next_btn {
+  background-color: #590;
+  width: 40%;
+  border: 3px #fff solid;
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  left: 30%;
+}
+.tel_num {
+  font-size: 170%;
+  margin-left: 3em;
+}
+#opening_left_lea {
+  margin-left: 3%;
+  width: 47%;
+  height: 100%;
+  float: left;
+  background-color: #ccc
+}
+#opening_left_lea input[type="text"] {
+  border: 1px solid #f00;
+  /*display: inline;*/
+  font-size: 150%;
+  width: 19em;
+  margin: 10% 0;
+  margin-top: 0;
+}
+#opening_left_lea input[name="user_number"], #opening_left_lea input[name="user_tel"]  {
+  width: 10em;
+}
+#opening_left_lea label {
+  font-size: 150%;
+}
+#opening_right_lea {
+  margin: 0;
+  margin-right: 3%;
+  width: 47%;
+  height: 100%;
+  float: right;
+  background-color: #000;
+  color: #fff;
+}
+#leakage_inp_com {
+  margin-top: 2%;
+  margin-left: 3%;
+  padding: 1% 0;
+  width: 94%;
+  font-size: 180%;
+  background-color: #ccc;
+  color: #fff;
+}
+#leakage_inp_mes {
+  font-size: 120%;
+  margin-bottom: 5%;
+}
+#map_display {
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 80%;
+  height: 80%;
+}
+#google_map {
+  width : 100%;
+  height: 100%;
+}
+.center {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  font-size: 130%;
+  color: #f50;
+
+}
+/*最終画面*/
+
+
+
+
+/*アニメーション用*/
+/*くるくる回るやつ用*/
+#access_floatingBarsG, #steal_floatingBarsG{
+	position:relative;
+	width:26px;
+	height:33px;
+	margin: 0 1%;
+  display: inline-block;
+}
+
+.blockG{
+	position:absolute;
+	background-color:rgb(255,255,255);
+	width:4px;
+	height:10px;
+	border-radius:3px 3px 0 0;
+		-o-border-radius:3px 3px 0 0;
+		-ms-border-radius:3px 3px 0 0;
+		-webkit-border-radius:3px 3px 0 0;
+		-moz-border-radius:3px 3px 0 0;
+	transform:scale(0.4);
+		-o-transform:scale(0.4);
+		-ms-transform:scale(0.4);
+		-webkit-transform:scale(0.4);
+		-moz-transform:scale(0.4);
+	animation-name:fadeG;
+		-o-animation-name:fadeG;
+		-ms-animation-name:fadeG;
+		-webkit-animation-name:fadeG;
+		-moz-animation-name:fadeG;
+	animation-duration:1.2s;
+		-o-animation-duration:1.2s;
+		-ms-animation-duration:1.2s;
+		-webkit-animation-duration:1.2s;
+		-moz-animation-duration:1.2s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+}
+
+#rotateG_01{
+	left:0;
+	top:12px;
+	animation-delay:0.45s;
+		-o-animation-delay:0.45s;
+		-ms-animation-delay:0.45s;
+		-webkit-animation-delay:0.45s;
+		-moz-animation-delay:0.45s;
+	transform:rotate(-90deg);
+		-o-transform:rotate(-90deg);
+		-ms-transform:rotate(-90deg);
+		-webkit-transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+}
+
+#rotateG_02{
+	left:3px;
+	top:4px;
+	animation-delay:0.6s;
+		-o-animation-delay:0.6s;
+		-ms-animation-delay:0.6s;
+		-webkit-animation-delay:0.6s;
+		-moz-animation-delay:0.6s;
+	transform:rotate(-45deg);
+		-o-transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg);
+		-webkit-transform:rotate(-45deg);
+		-moz-transform:rotate(-45deg);
+}
+
+#rotateG_03{
+	left:11px;
+	top:1px;
+	animation-delay:0.75s;
+		-o-animation-delay:0.75s;
+		-ms-animation-delay:0.75s;
+		-webkit-animation-delay:0.75s;
+		-moz-animation-delay:0.75s;
+	transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		-ms-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+}
+
+#rotateG_04{
+	right:3px;
+	top:4px;
+	animation-delay:0.9s;
+		-o-animation-delay:0.9s;
+		-ms-animation-delay:0.9s;
+		-webkit-animation-delay:0.9s;
+		-moz-animation-delay:0.9s;
+	transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+}
+
+#rotateG_05{
+	right:0;
+	top:12px;
+	animation-delay:1.05s;
+		-o-animation-delay:1.05s;
+		-ms-animation-delay:1.05s;
+		-webkit-animation-delay:1.05s;
+		-moz-animation-delay:1.05s;
+	transform:rotate(90deg);
+		-o-transform:rotate(90deg);
+		-ms-transform:rotate(90deg);
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+}
+
+#rotateG_06{
+	right:3px;
+	bottom:3px;
+	animation-delay:1.2s;
+		-o-animation-delay:1.2s;
+		-ms-animation-delay:1.2s;
+		-webkit-animation-delay:1.2s;
+		-moz-animation-delay:1.2s;
+	transform:rotate(135deg);
+		-o-transform:rotate(135deg);
+		-ms-transform:rotate(135deg);
+		-webkit-transform:rotate(135deg);
+		-moz-transform:rotate(135deg);
+}
+
+#rotateG_07{
+	bottom:0;
+	left:11px;
+	animation-delay:1.35s;
+		-o-animation-delay:1.35s;
+		-ms-animation-delay:1.35s;
+		-webkit-animation-delay:1.35s;
+		-moz-animation-delay:1.35s;
+	transform:rotate(180deg);
+		-o-transform:rotate(180deg);
+		-ms-transform:rotate(180deg);
+		-webkit-transform:rotate(180deg);
+		-moz-transform:rotate(180deg);
+}
+
+#rotateG_08{
+	left:3px;
+	bottom:3px;
+	animation-delay:1.5s;
+		-o-animation-delay:1.5s;
+		-ms-animation-delay:1.5s;
+		-webkit-animation-delay:1.5s;
+		-moz-animation-delay:1.5s;
+	transform:rotate(-135deg);
+		-o-transform:rotate(-135deg);
+		-ms-transform:rotate(-135deg);
+		-webkit-transform:rotate(-135deg);
+		-moz-transform:rotate(-135deg);
+}
+
+
+
+@keyframes fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-o-keyframes fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-ms-keyframes fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-webkit-keyframes fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+@-moz-keyframes fadeG{
+	0%{
+		background-color:rgb(0,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+/*データバー用*/
+/* ラインの最初の色のスタイル */
+#access_line, #steal_line {
+    width:70%; /* 横幅100% */
+    height:15px;
+    margin:40px auto;
+    background:#ddd;
+}
+
+/* ラインのアニメーション時の色と動き */
+.fullwidth .expand {
+    width:49%;
+    height:15px;
+    margin:0;
+    background:#2dd;
+    position:absolute;
+    -moz-animation:fullexpand 7s ease-out;
+    -webkit-animation:fullexpand 7s ease-out;
+}
+
+ /* キーフレームを使った横幅100%のローディングの始まりと終わりの変化 */
+@-moz-keyframes fullexpand {
+    0%  { width:0px;}
+    100%{ width:49%;}
+}
+@-webkit-keyframes fullexpand {
+    0%  { width:0px;}
+    100%{ width:50%;}
+}
+
+.yen_ani1 {
+  position: absolute;
+  top: 70px;
+  animation-name: stylie-keyframes-left;
+  animation-duration: 1.5s;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  /*animation-iteration-count: infinite;*/
+  transform-origin: 0 0;
+}
+.yen_ani2 {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  animation-name: stylie-keyframes-right;
+  animation-duration: 1.5s;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  /*animation-iteration-count: infinite;*/
+  transform-origin: 0 0;
+}
+
+@keyframes stylie-keyframes-left {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  4.55% {transform:translate(4%, 1%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  9.09% {transform:translate(9%, 4%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  13.64% {transform:translate(13%, 10%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  18.18% {transform:translate(18%, 18%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  22.73% {transform:translate(22%, 28%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  27.27% {transform:translate(27%, 41%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  31.82% {transform:translate(31%, 56%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  36.36% {transform:translate(36%, 73%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  40.91% {transform:translate(40%, 93%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  45.45% {transform:translate(45%, 100%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  50% {transform:translate(50%, 139%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  54.55% {transform:translate(54%, 166%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  59.09% {transform:translate(59%, 195%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  63.64% {transform:translate(63%, 226%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  68.18% {transform:translate(68%, 259%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  72.73% {transform:translate(72%, 295%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  77.27% {transform:translate(77%, 333%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  81.82% {transform:translate(81%, 374%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  86.36% {transform:translate(86%, 416%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  90.91% {transform:translate(90%, 461%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  95.45% {transform:translate(95%, 509%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  100% {transform:translate(100%, 530%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}html::after { content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel); position: absolute; left: -999em; }
+
+@keyframes stylie-keyframes-right {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  4.55% {transform:translate(-4%, 1%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  9.09% {transform:translate(-9%, 4%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  13.64% {transform:translate(-13%, 10%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  18.18% {transform:translate(-18%, 18%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  22.73% {transform:translate(-22%, 28%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  27.27% {transform:translate(-27%, 41%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  31.82% {transform:translate(-31%, 56%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  36.36% {transform:translate(-36%, 73%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  40.91% {transform:translate(-40%, 93%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  45.45% {transform:translate(-45%, 100%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  50% {transform:translate(-50%, 139%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  54.55% {transform:translate(-54%, 166%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  59.09% {transform:translate(-59%, 195%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  63.64% {transform:translate(-63%, 226%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  68.18% {transform:translate(-68%, 259%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  72.73% {transform:translate(-72%, 295%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  77.27% {transform:translate(-77%, 333%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  81.82% {transform:translate(-81%, 374%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  86.36% {transform:translate(-86%, 416%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  90.91% {transform:translate(-90%, 461%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  95.45% {transform:translate(-95%, 509%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+  100% {transform:translate(-100%, 530%) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}html::after { content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel); position: absolute; left: -999em; }
+
+
+.comment {
+  color: #999;
+  animation-name: comment-keyframes;
+  animation-duration: 8s;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 5em;
+  position: absolute;
+  right: -150%;
+  top: 10%;
+  transform-origin: 0 0;
+  /*display: none;*/
+}
+@keyframes comment-keyframes {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -100%);}
+  /*10%{transform:translate(-50%, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -100%); display: block;}*/
+  100% {transform:translate(-550%, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -100%);}
+}html::after { content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel); position: absolute; left: -999em; }

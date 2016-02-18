@@ -1,0 +1,9 @@
+<div id="use_card" class="game">
+  <div class="background">
+    <span id="counter">￥<span id="yen_counter">0</span></span>
+    <button type="button" name="use_card" id="use_card_btn" onclick="usecard();">カード使用</button><br>
+    <%= button_to '終わる', '/end', method: :get, id: 'finish' %>
+    <div id="bills_stack">
+    </div>
+  </div>
+</div>
