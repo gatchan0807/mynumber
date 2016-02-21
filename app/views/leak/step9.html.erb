@@ -3,8 +3,8 @@
     <h1>ハック完了しました</h1>
     <div id="excla_dat"></div>
     <p class="data_hack_com">
-      <span id="hack_name1" class="red hack_name">[ニックネーム]</span>さんの<br>
-      マイナンバーは<span id="mynumber1" class="red mynumber">[マイナンバー]</span>で、<br>
+      <span id="hack_name1" class="red hack_name"><%= @user.name %></span>さんの<br>
+      マイナンバーは<span id="mynumber1" class="red mynumber"><%= @user.number %></span>で、<br>
       住所は<span class="red">大阪府大阪市天王寺区六丁目八ー四</span>です。
       電話番号は<span class="red">080-0000-0000</span>です。
     </p>

@@ -1,7 +1,7 @@
 <div id="account_open" class="game">
   <div class="background">
     <p id="acount_open_com">
-      これで<span class="red"><span id="hack_name2" class="hack_name">[ニックネーム]</span>さんの個人情報を取得</span>することが
+      これで<span class="red"><span id="hack_name2" class="hack_name"><%= @user.name %></span>さんの個人情報を取得</span>することが
       出来ました。この個人情報を使って<span class="red">不正に口座を開設する</span>ことができてしまいます…
     </p>
     <%= button_to '次へ', '/hackstep11', method: :get, id: 'next_hij_5' %>

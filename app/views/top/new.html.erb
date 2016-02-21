@@ -1,9 +1,44 @@
+<div class="omikuji_do">
 <div class='login_form'>
-  <%= form_for @user, url: top_index_path do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'name_form' %><br>
-    <%= f.label :number %>
-    <%= f.text_field :number, maxlength: 4, class: 'name_form' %><br>
-    <%= f.submit '作成', class: 'submit_form' %>
-  <% end %>
+  <!-- <h2>新規登録</h2> -->
+  <h2 id="omikuji_title">マイナンバーってなんなんだー？</h2>
+    <%= form_for @user, url: top_index_path do |f| %>
+      <%= f.label :ニックネーム %>
+      <%= f.text_field :name, id: 'login_form_name', autocomplete:"off" %><br>
+      <%= f.label :マイナンバー（4桁） %>
+      <%= f.text_field :number, maxlength: 4, id: 'login_form_number', autocomplete:"off" %><br>
+      <!-- <%= f.submit '作成', class: 'login_form_submit' %> -->
+      <button type="button" class="omikuji_do"name="omikuji_do" id="omikuji_do" onclick="omikuji();">占う</button>
+    <% end %>
+  </div>
+</div>
+
+
+   <!-- <div class="background"> -->
+    <div id="maku"></div>
+    <!-- <button type="button" name="omikuji_do" id="omikuji_do" onclick="omikuji();">占う</button> -->
+    <div id="leakstep_ver">
+      <div class="result">
+        <span class="big">大凶</span><br>
+        <p>
+          <span class="red">口座を乗っ取られて</span>しまいました…！！
+          <!-- <br>十分に注意しましょう。-->
+          <div id="leak_result" class="result_image"></div>
+          <%= link_to '次へ', 'hackstep1',id:"to_hackstep" %>
+        </p>
+      </div>
+    </div>
+    <div id="hackstep_ver">
+      <div class="result">
+        <span class="big">大凶</span><br>
+        <p>
+          <span class="red">住所が流失して</span>しまいました…！！
+          <!-- <br>十分に注意しましょう。-->
+          <div id="hack_result" class="result_image"></div>
+        </p>
+        <%= link_to '次へ', 'leakstep1',id:"to_leakstep" %>
+      </div>
+    <!-- </div> -->
+  </div>
+
 </div>

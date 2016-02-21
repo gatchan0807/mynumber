@@ -2,4 +2,21 @@
   <div id="google_map"></div>
   <%= button_to '次へ', '/leakstep13', method: :get, class: 'next_btn', id: 'next_lea_7' %>
   <div id="comment_stack"></div>
+  <script src="http://maps.google.com/maps/api/js?v=3&sensor=false" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript">
+  var user_name = <%= raw @user.name.to_json %>;
+  var latlng = new google.maps.LatLng(34.663709, 135.518600);
+      var opts = {
+        zoom: 19,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: latlng
+      };
+  maps = new google.maps.Map(document.querySelector("#google_map"), opts);
+  var infoWindowOpts = {
+        position: new google.maps.LatLng(34.663805, 135.518600),
+        content: user_name + "の住所はここですね？"
+      };
+  var infowin = new google.maps.InfoWindow(infoWindowOpts);
+  infowin.open(maps);
+  </script>
 </div>

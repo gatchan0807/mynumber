@@ -1,7 +1,7 @@
 <div id="do_leakage" class="game">
   <div class="background">
     <p class="leakage_com">
-      これで<span class="red hack_name">[ニックネーム]</span>さんの個人情報を取得することが出来ました。<br>
+      これで<span class="red hack_name"><%= @user.name %></span>さんの個人情報を取得することが出来ました。<br>
       残るはこの情報を<span class="red">ネット上に書き込んで流出</span>させるだけです。
     </p>
     <%= button_to '次へ', '/leakstep11', method: :get, class: 'next_btn', id: 'next_lea_6' %>

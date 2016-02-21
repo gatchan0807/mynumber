@@ -1,15 +1,16 @@
+<header id="game_head">
+       <h2 class="sub_title">大きな原因は…？</h2>
+</header>
 <div id="process_desc" class="game">
   <ul id="process_li" class="background">
     <li class="process_li"><span class="red">マイナンバー</span>が流出！</li>
     <li class="dot_none">↓</li>
-    <li class="process_li"><span class="red">個人情報</span>の流出…</li>
+    <li class="process_li">ネット上に<span class="red">個人情報の書き込み</span>…</li>
     <li class="dot_none">↓</li>
-    <li class="process_li">口座を<span class="red">不正に開設</span></li>
-    <li class="dot_none">↓</li>
-    <li class="process_li">クレジットカードを不正に作成し、<span class="red">借金地獄</span>に…</li>
-  <div class="buttons">
-    <%= button_to '終わる', '/end', method: :get, id: 'end_game' %>
-    <%= button_to 'この事件を体験する', '/leakstep2', method: :get, id: 'enter_game' %>
-  </div>
+    <li class="process_li">GoogleMap上で<span class="red">住所を調べられ、晒し者に</span>…！！</li>
+    <div class="buttons">
+      <%= button_to 'この事件を体験する', '/leakstep2', method: :get, id: 'enter_game' %>
+      <%= button_to '終わる', '/end', method: :get, id: 'end_game' %>
+    </div>
   </ul>
 </div>

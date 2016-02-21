@@ -10,15 +10,15 @@
       <input type="text" name="user_number" id="u_number" autocomplete="off" maxlength="4">
       <label for="user_address">住所</label>
       <input type="text" name="user_address" id="user_address" autocomplete="off">
-      <input type="submit" name="submit" id="entry" value="登録" onsubmit="judge();">
     </form>
+    <button type="submit" name="submit" id="entry" value="登録" onclick="judge();　return false;">登録</button>
   </div>
   <div id="opening_right">
     <h4 class="data_title">名前</h4>
-    <span id="hack_name3" class="hack_name">[ニックネーム]</span>
+    <span id="hack_name3" class="hack_name"><%= @user.name %></span>
     <h4 class="data_title">マイナンバー</h4>
-    <span id="mynumber2" class="mynumber">[マイナンバー]</span>
+    <span id="mynumber2" class="mynumber"><%= @user.number %></span>
     <h4 class="data_title">住所</h4>
-    <span class="address">大阪府大阪市天王寺区六丁目八ー四</span>
+    <span class="address">大阪府大阪市天王寺区上本町六丁目八ー四</span>
   </div>
 </div>

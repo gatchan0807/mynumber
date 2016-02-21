@@ -1,2 +1,28 @@
-<%= link_to '講座流出', 'leakstep1' %> 
-<%= link_to '情報流出', 'hackstep1' %>
+<h2 id="omikuji_title">マイナンバー占い</h2>
+
+<!-- <div class="background"> -->
+  <div id="maku"></div>
+  <button type="button" name="omikuji_do" id="omikuji_do" onclick="omikuji();">占う</button>
+  <!-- <div id="leakstep_ver"> -->
+    <div class="result">
+      <span class="big">大凶</span><br>
+      <p>
+        <span class="red">口座を乗っ取られて</span>しまいました…！！
+        <!-- <br>十分に注意しましょう。 -->
+        <div id="leak_result" class="result_image"></div>
+        <%= link_to '次へ', 'hackstep1',id:"to_hackstep" %>
+      </p>
+    </div>
+  </div>
+  <div id="hackstep_ver">
+    <div class="result">
+      <span class="big">大凶</span><br>
+      <p>
+        <span class="red">住所が流失して</span>しまいました…！！
+        <!-- <br>十分に注意しましょう。 -->
+        <div id="hack_result" class="result_image"></div>
+      </p>
+      <%= link_to '次へ', 'leakstep1',id:"to_leakstep" %>
+    <!-- </div> -->
+  </div>
+<!-- </div> -->

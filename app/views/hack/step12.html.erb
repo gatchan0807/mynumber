@@ -4,7 +4,7 @@
       <h3 class="red">口座番号</h3>
       <span>xxxx-xxxx-xxx</span>
       <h3 class="red">名義人</h3>
-      <span id="hack_name4" class="hack_name">[ニックネーム]</span><br>
+      <span id="hack_name4" class="hack_name"><%= @user.name %></span><br>
       <%= button_to '次へ', '/hackstep13', method: :get, id: 'next_hij_6' %>
     </div>
   </div>
